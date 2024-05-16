@@ -1,0 +1,18 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  creationTimestamp: null
+  name: dc-metro-map-ft5z
+spec:
+  replicas: 1
+  selector: {}
+  strategy: {}
+  template:
+    metadata:
+      creationTimestamp: null
+    spec:
+      containers:
+      - image: quay.io/redhat-appstudio-qe/push-pyxis-wmhx-tenant/appstudio/dc-metro-map-ft5z@sha256:f451a6065d9b9c6ab958a6f01e1d5376e169e675382e6f8e96e1c03c44543972
+        name: my-nodejs
+        resources: {}
+status: {}
